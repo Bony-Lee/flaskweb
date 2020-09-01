@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jinja Test Page</title>
+</head>
+<body>
+    <div>Jinja Test : {{title}}</div>
+    <hr>
+
+    {{ "}}>> <strong>Strong</strong>" | escape }}
+    <hr>
+    {{ "<strong>Strong1</strong>" | safe }}
+    {{ "<strong>Strong2</strong>" | striptags }}
+    <hr>
+
+    {% raw %}
+    {% if True %}
+    TTT
+    {% endif %}
+    {% endraw %}
+
+
+
+    <pre>
+        ttt 한글
+        {%- if True  -%}
+            TTT
+        {%- endif -%}qqq
+    </pre>
+</body>
+</html>
